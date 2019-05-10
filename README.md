@@ -7,8 +7,8 @@ Stable | Prerelease
 
 MacOS/Linux | Windows
 --- | ---
-[![CircleCI](https://circleci.com/gh/humhei/Akka.Persistence.LiteDB.FSharp.svg?style=svg)](https://circleci.com/gh/humhei/Akka.Persistence.LiteDB.FSharp) | [![Build status](https://ci.appveyor.com/api/projects/status/0qnls95ohaytucsi?svg=true)](https://ci.appveyor.com/project/humhei/Akka.Persistence.LiteDB.FSharp)
-[![Build History](https://buildstats.info/circleci/chart/humhei/Akka.Persistence.LiteDB.FSharp)](https://circleci.com/gh/humhei/Akka.Persistence.LiteDB.FSharp) | [![Build History](https://buildstats.info/appveyor/chart/humhei/Akka.Persistence.LiteDB.FSharp)](https://ci.appveyor.com/project/humhei/Akka.Persistence.LiteDB.FSharp)
+[![CircleCI](https://circleci.com/gh/humhei/Akka.Persistence.LiteDB.FSharp.svg?style=svg)](https://circleci.com/gh/humhei/Akka.Persistence.LiteDB.FSharp) | [![Build status](https://ci.appveyor.com/api/projects/status/0qnls95ohaytucsi?svg=true)](https://ci.appveyor.com/project/ts2fable-imports/Akka-Persistence-LiteDB-FSharp)
+[![Build History](https://buildstats.info/circleci/chart/humhei/Akka.Persistence.LiteDB.FSharp)](https://circleci.com/gh/humhei/Akka.Persistence.LiteDB.FSharp) | [![Build History](https://buildstats.info/appveyor/chart/ts2fable-imports/Akka-Persistence-LiteDB-FSharp)](https://ci.appveyor.com/project/ts2fable-imports/Akka-Persistence-LiteDB-FSharp)
 
 ---
 
