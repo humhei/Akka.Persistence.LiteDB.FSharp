@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Tests.MyTests.fs" />
+    <Compile Include="Tests.Runner.fs" />
+  </ItemGroup>
+  <!--<ItemGroup>
+    <PackageReference Include="Akkling" Version="0.9.3" />
+    <PackageReference Include="Akkling.Persistence" Version="0.9.3" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Akka.Persistence.LiteDB.FSharp\Akka.Persistence.LiteDB.FSharp.fsproj" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

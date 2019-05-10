@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Operators.fs" />
+    <Compile Include="Extensions.fs" />
+    <Compile Include="Snapshot.fs" />
+    <Compile Include="Journal.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--<PackageReference Include="Akka.Persistence" Version="1.3.13" />-->
+    <PackageReference Include="LiteDB.FSharp" Version="2.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\akka.net\src\core\Akka.Persistence\Akka.Persistence.csproj" />
+    <ProjectReference Include="..\..\..\Akkling\src\Akkling.Persistence\Akkling.Persistence.fsproj" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
