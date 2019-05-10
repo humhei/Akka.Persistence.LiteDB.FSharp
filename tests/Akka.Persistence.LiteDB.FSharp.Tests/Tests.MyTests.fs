@@ -80,7 +80,7 @@ let MyTests =
         testInSystem 1
         testInSystem 2
         
-    ftestCase "snapshot tests" <| fun _ -> 
+    testCase "snapshot tests" <| fun _ -> 
         File.Delete "hello.db"
 
         let testInSystem expectedNumber =
