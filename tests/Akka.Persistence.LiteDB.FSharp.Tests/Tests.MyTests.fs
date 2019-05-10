@@ -1,8 +1,6 @@
 module Tests.MyTests
 open Expecto
-open Akka.Persistence.LiteDB.FSharp
 open Akkling
-open Akkling.Spawn
 open Akkling.Persistence
 open System
 open System.IO
@@ -81,7 +79,7 @@ let MyTests =
         testInSystem 2
         
     testCase "snapshot tests" <| fun _ -> 
-        File.Delete "hello.db"
+        File.Delete "hello2.db"
 
         let testInSystem expectedNumber =
             let system = 
@@ -91,7 +89,7 @@ let MyTests =
                     akka.persistence.snapshot-store.litedb.fsharp {
                         class = "Akka.Persistence.LiteDB.FSharp.LiteDBSnapshotStore, Akka.Persistence.LiteDB.FSharp"
                         plugin-dispatcher = "akka.actor.default-dispatcher"
-                        connection-string = "hello.db"
+                        connection-string = "hello2.db"
                     }
                 """
 
@@ -142,9 +140,6 @@ let MyTests =
             system.Terminate() |> Task.WaitAll
         testInSystem 1
         testInSystem 2
-        
-
-        
 
 
   ]

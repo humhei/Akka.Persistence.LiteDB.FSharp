@@ -6,9 +6,6 @@ open Akka.Persistence
 open Akka.Configuration
 open LiteDB.FSharp.Extensions
 open System
-open Akka.Serialization
-open Akka.Util
-open Extensions
 open System.Threading.Tasks
 open Akka.Actor
 
@@ -26,7 +23,7 @@ type LiteDBSnapshot =
 type LiteDBSnapshotStore(config: Config) =
     inherit SnapshotStore()
     let mapper = FSharpBsonMapper()
-    let dbPath = config.GetString( "connectString", "persistence_snapshot_store.db")
+    let dbPath = config.GetString( "connection-string", "persistence_snapshot_store.db")
 
     let akkaSerialization = Akka.Actor.ActorBase.Context.System.Serialization
 
